@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+</head>
+<body>
+
+    <h2>Student Result Checker</h2>
+
+    Enter Marks:
+    <input type="number" id="marks">
+
+    <button onclick="checkResult()">Check Result</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkResult() {
+            let marks = document.getElementById("marks").value;
+
+            if (marks === "" || marks < 0 || marks > 100) {
+                document.getElementById("result").innerHTML =
+                    "Please enter valid marks!";
+            }
+            else if (marks >= 33) {
+                document.getElementById("result").innerHTML =
+                    "Pass";
+            }
+            else {
+                document.getElementById("result").innerHTML =
+                    "Fail";
+            }
+        }
+    </script>
+
+</body>
+</html>

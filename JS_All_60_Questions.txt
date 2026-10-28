@@ -1,5 +1,3 @@
-
-
 1. BASIC JAVASCRIPT SYNTAX
 
 
